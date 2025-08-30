@@ -11,8 +11,8 @@ permissions:
 
 env:
   AZURE_SUBSCRIPTION_ID: ${{ secrets.subscription_id }}
-  AZURE_RESOURCE_GROUP: "mytesting3"
-  AZURE_WEBAPP_NAME: "demo-webapp5"
+  AZURE_RESOURCE_GROUP: "mytesting4"
+  AZURE_WEBAPP_NAME: "demo-webapp4"
   ACR_NAME: "mytest2025"   # without .azurecr.io
   IMAGE_NAME: "project1"        # e.g. myapp
 
