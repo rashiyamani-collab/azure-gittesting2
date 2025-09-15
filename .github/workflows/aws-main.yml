@@ -46,7 +46,7 @@ jobs:
       # Update deployment.yaml with new image
       - name: Update Kubernetes manifests
         run: |
-          sed -i "s|image:.*|image: $IMAGE_URI|g" k8s/app-deployment.yaml
+          sed -i "s|image:.*|image: $IMAGE_URI|g" k8s/nginx-deployment.yaml
           
 
       - name: Update kubeconfig
