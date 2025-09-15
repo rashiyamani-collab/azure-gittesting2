@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deploymenttest2
+  labels:
+    app: nginxtest2
+spec:
+  replicas: 3 # Desired number of Nginx pods
+  selector:
+    matchLabels:
+      app: nginxtest2
+  template:
+    metadata:
+      labels:
+        app: nginxtest2
+    spec:
+      containers:
+      - name: nginxtest2
+        image: 074002960123.dkr.ecr.ap-south-1.amazonaws.com/myapp:latest # Using the latest Nginx image
+        ports:
+        - containerPort: 80 # Nginx listens on port 80 inside the container
